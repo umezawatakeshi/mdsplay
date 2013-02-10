@@ -39,7 +39,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	}
 	catch (_com_error e)
 	{
-		Message(true, "Cannot play media: %s\n", __argv[0], e.ErrorMessage());
+		Message(true, "Cannot play media: %s\n", e.ErrorMessage());
 		return 1;
 	}
 }
